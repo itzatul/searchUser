@@ -1,0 +1,63 @@
+@mixin font-base {
+    font-size: 20px; 
+}
+@mixin flex-display {
+    display: inline-flex;
+    width:  400px;
+}
+
+.search-container {
+    background: $search-bar-color;;
+    height: 60px;
+    padding: 10px 0 0 20px;
+    span {
+        input {
+            background: $search-bar-color;
+            border: none;
+            height: 35px;
+            border-bottom: 2px solid $outline-color;
+            color: $primary-color-text;
+            margin: 0 0 0 15px;
+            width: 50%;
+            &:focus {
+            outline: 0;
+            }
+            &::placeholder{
+                color: $outline-color;
+            }
+        }
+    }
+}
+
+.icon-search {
+    @include font-base;
+    vertical-align: middle;
+    color: $outline-color
+}
+
+.list {
+    padding: 0 0 0 0;
+    li:nth-child(even){
+        background-color: #e8e8e8
+    }
+    li {
+        list-style: none;
+        padding: 0 25px;
+        p {
+            @include font-base;
+            padding: 5px 0 0 0;
+            margin: 0;
+        }
+        div {
+            padding: 10px 15px;
+            span {
+                font-size: 15px;
+                padding: 0 10px;
+            }
+            @include flex-display;
+            p {
+                @include font-base;
+            }
+        }
+    }
+}

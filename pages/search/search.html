@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="search-container">
+        <span class="glyphicon glyphicon-search icon-search"></span>
+        <span>
+      <input type="text" ng-model="va.userKey" placeholder="SEARCH (Client Name / Policy Number)" ng-change="va.onKeyPress({userKey: va.userKey})">
+    </span>
+      </div>
+      <ul class='list'>
+        <li ng-repeat="user in va.users">
+          <p>{{user.name}}</p>
+          <div>
+            <span class="fa fa-phone"></span>{{user.phone}}
+          </div>
+          <div><span>@</span>{{user.email}}</div>
+          <div><span class="fa fa-file-text"></span>Policy No. {{user.policyNo}} | {{user.policyNo}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
