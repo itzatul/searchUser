@@ -5,3 +5,4 @@
 - Run `npm run start` to start server
 - Web Server runs on `http://localhost:8080` 
 
+![Screenshot](/screenshot.png?raw=true "Search")
