@@ -38,7 +38,7 @@
 .list {
     padding: 0 0 0 0;
     li:nth-child(even){
-        background-color: #e8e8e8
+        background-color: $list-strip-color;
     }
     li {
         list-style: none;
